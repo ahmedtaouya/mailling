@@ -4,6 +4,8 @@ const port = 8000
 
 app.use(express.json())
 var cors = require('cors')
+app.use(cors())
+
 const MailingRoutes = require('./routes/maillngroutes')
 
 app.use('/api',  MailingRoutes)
